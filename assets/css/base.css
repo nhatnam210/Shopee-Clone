@@ -207,6 +207,7 @@ html{
     display: none;
     z-index: 1;
     animation: fadeIn3 ease-out 0.3s;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
 }
 
 .select-input__list::before{
