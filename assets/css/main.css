@@ -515,6 +515,16 @@
     margin: 0 8px;
 }
 
+.header__mobile-search {
+    padding: 0 12px;
+}
+
+.header__mobile-search-icon {
+    font-size: 2.6rem;
+    color:var(--white-color)
+}
+
+
 .header__logo{
     width: 200px;
 }
@@ -526,6 +536,8 @@
 .header__logo-link{
     color: transparent;
     text-decoration: none;
+    display: block;
+    line-height: 0;
 }
 
 .header__search{
@@ -547,7 +559,7 @@
 .header__cart-wrap{
     position: relative;
     display: inline-block;
-    padding: 0 8px;
+    padding: 0 12px;
     cursor: pointer;
 }
 
@@ -564,7 +576,7 @@
     background-color: var(--white-color);
     width: 400px;
     border-radius: 2px;
-    box-shadow: 0 1px 3.125rem 0 rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
     animation: headerNotifyGrowth ease-in .2s;
     transform-origin: calc(100% - 20px) top; /* Tùy chỉnh tâm hình dạng chuyển động*/
     will-change: opacity, transform;
