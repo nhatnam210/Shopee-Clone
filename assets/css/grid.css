@@ -462,7 +462,7 @@ html{
         margin-right: -12px;
     }
 
-    .row .sm-gutter {
+    .row.sm-gutter {
         margin-left: -5px;
         margin-right: -5px;
     }
@@ -472,7 +472,7 @@ html{
         padding-right: 12px;
     }
 
-    .row .sm-gutter .col {
+    .row.sm-gutter .col {
         padding-left: 5px;
         padding-right: 5px;
     }
