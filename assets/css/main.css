@@ -171,9 +171,10 @@
 }
 
 .header__navbar-label--no-pointer{
-    cursor: text;
+    cursor: default;
     color: var(--white-color);
     margin-right: 5px;
+    user-select: none;
 }
 
 /* Header QR code*/
@@ -227,6 +228,7 @@
 
 .header__qr-download-img{
     height: 16px;
+    transition: linear .2s;
 }
 
 .header__qr-download-img:hover{
@@ -357,6 +359,11 @@
 .header__notify-footer{
     display: flex;
     height: 40px; 
+    transition: linear .2s;
+}
+
+.header__notify-footer:hover {
+    background-color: var( --sub-color);
 }
 
 .header__notify-footer-btn{
@@ -368,12 +375,12 @@
     text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
-    transition: all linear .2s;
-    
+    transition: transform linear .2s;
 }
 
 .header__notify-footer-btn:hover{
     transform: scale(1.2);
+    color: var(--white-color);
 }
 
 
@@ -854,6 +861,7 @@
     background-color: var(--white-color);
     padding: 8px 4px;
     text-align: left;
+    user-select: none;
 
 }
 
@@ -1267,7 +1275,9 @@
 .home-product-item__price{
     display: flex;
     align-items: baseline;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .home-product-item__price-old{
@@ -1278,9 +1288,9 @@
 }
 
 .home-product-item__price-current{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: var(--main-color);
-    margin: 0 10px;
+    margin: 5px 10px 0 10px;
 }
 
 .home-product-item__action{
@@ -1419,6 +1429,7 @@ i.home-product-item__like-icon-fill{
 .footer__heading{
     font-size: 1.4rem;
     text-transform: uppercase;
+    user-select: none;
 
 }
 
@@ -1434,12 +1445,12 @@ i.home-product-item__like-icon-fill{
     padding: 2px 0;
     display: flex;
     align-items: center;
+    transition: margin-left linear .1s;
 }
 
 .footer-item__link:hover{
     color: var(--main-color);
     margin-left: 3px;
-    transition: margin-left linear .1s;
 
 }
 
